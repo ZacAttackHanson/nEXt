@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+
+<h1>Edit Profile page</h1>
+
+
+
+ <form action="/users/<%= user._id %>?_method=PUT" method="POST">
+    <input type="text" name="username" value= <%= user.username %> >
+    <input type="password" name="password" value= "<%= user.password %>" >
+        <input type="text" name="firstName" value= "<%= user.firstName %>" >
+        <input type="text" name="lastName" value= "<%= user.lastName %>" >
+          <input type="text" name="bio" value= "<%= user.bio %>" >
+          <input type="Text" name="Profilepicture" value= "<%= user.Profilepicture %>" >
+    <button>Sign Up</button>
+</form>
+
+
+
+
+<% include ../partials/footer %>
